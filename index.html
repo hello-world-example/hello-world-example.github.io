@@ -1,0 +1,84 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+
+    <title>Hello World Example</title>
+
+    <link rel="stylesheet" href="//unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<div id="app" style="display: none">
+
+    <el-container>
+
+        <el-header>
+
+            <!-- 菜单 -->
+            <el-menu class="el-menu-demo" mode="horizontal">
+
+                <!-- 导航 -->
+                <el-menu-item v-for="menu in menus">
+                    <el-link underline="false" :icon="menu.icon" :href="menu.href" target="_blank">
+                        {{ menu.text }}
+                    </el-link>
+                </el-menu-item>
+
+                <!-- 搜索框 -->
+                <el-menu-item>
+                    <el-input type="text" placeholder="搜索" prefix-icon="el-icon-search" v-model="searchKey"/>
+                </el-menu-item>
+
+            </el-menu>
+
+        </el-header>
+
+        <el-main>
+
+            <el-row :gutter="20">
+
+                <el-col :xs="24" :span="6"
+                        v-for="(project) in projects
+                        .filter(data => !searchKey || data.name.toLowerCase().includes(searchKey.toLowerCase()))">
+
+                    <!-- 卡片 -->
+                    <el-card>
+
+                        <div class="image-box">
+
+                            <!-- 默认图片 -->
+                            <template v-if="!project.image">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573304975241&di=09c1a7897b56742b386c40dd8f03363a&imgtype=0&src=http%3A%2F%2Fimgs.logonews.cn%2Fuploads%2F2013%2F04%2Fgithub-new-logos_04.png"
+                                     class="image"/>
+                            </template>
+                            <template v-else>
+                                <img :src="project.image" class="image"/>
+                            </template>
+                        </div>
+
+                        <div class="desc-box">
+                            <el-link :href="project.url" :underline="false" target="_blank">{{ project.name }}</el-link>
+                        </div>
+
+                    </el-card>
+
+                </el-col>
+
+            </el-row>
+
+        </el-main>
+
+    </el-container>
+
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/vue"></script>
+<script src="//unpkg.com/element-ui/lib/index.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

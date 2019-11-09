@@ -1,0 +1,34 @@
+#app {
+    display: none;
+}
+
+.el-container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.el-col {
+    margin-bottom: 20px;
+}
+
+.el-card__body {
+    padding: 0;
+    height: 200px;
+}
+
+/**/
+.image-box {
+    height: 160px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+/**/
+.desc-box {
+    padding: 8px;
+    text-align: center;
+}
