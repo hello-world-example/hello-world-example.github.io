@@ -9,7 +9,10 @@ vue = new Vue({
 
 /* 避免样式闪动 */
 window.onload = function () {
+    let datasourceId = document.getElementById("datasouce");
+    datasourceId.style.display = "none";
     document.getElementById("app").style.display = "block";
+    
 
     let datasourceId = document.getElementById("datasouce");
     let children = datasourceId.children;
@@ -38,7 +41,7 @@ window.onload = function () {
 
                 vue.projects = []
                 vue.projects[i] = {
-                    icon: project.getAttribute('data-image'),
+                    image: project.getAttribute('data-image'),
                     href: project.getAttribute('href'),
                     name: project.text
                 }
