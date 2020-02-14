@@ -40,7 +40,7 @@ window.onload = function () {
                 vue.projects = []
                 vue.projects[i] = {
                     image: project.getAttribute('data-image'),
-                    href: project.getAttribute('href'),
+                    url: project.getAttribute('href'),
                     name: project.text
                 }
             }
