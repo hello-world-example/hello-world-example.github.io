@@ -13,8 +13,6 @@ window.onload = function () {
     datasourceId.style.display = "none";
     document.getElementById("app").style.display = "block";
     
-
-    let datasourceId = document.getElementById("datasouce");
     let children = datasourceId.children;
     for (let i = 0; i < children.length; i++) {
         let child = children[i];
