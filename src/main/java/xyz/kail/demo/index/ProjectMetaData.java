@@ -55,7 +55,7 @@ public class ProjectMetaData {
         PROJECTS.put("Solr", "http://img2.imgtn.bdimg.com/it/u=4207341731,1016545429&fm=26&gp=0.jpg");
         PROJECTS.put("Spring", "http://img4.imgtn.bdimg.com/it/u=2995354372,2168828254&fm=26&gp=0.jpg");
         PROJECTS.put("Spring-Boot", "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2331877823,2031479521&fm=26&gp=0.jpg");
-        PROJECTS.put("Spring-Cloud", "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581699351029&di=14eab33a171261069d004779a663464d&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fbaike%2Fpic%2Fitem%2Fc8ea15ce36d3d53944e360f83487e950352ab02b.jpg");
+        PROJECTS.put("Spring-Cloud", "https://i0.wp.com/e4developer.com/wp-content/uploads/2018/01/spring-cloud-logo.png?resize=800%2C753&ssl=1");
         PROJECTS.put("TFS", "http://img3.imgtn.bdimg.com/it/u=3199094886,4165035157&fm=26&gp=0.jpg");
         PROJECTS.put("TensorFlow", "http://img4.imgtn.bdimg.com/it/u=4180865175,1235989499&fm=26&gp=0.jpg");
         PROJECTS.put("Troubleshooting", "http://img4.imgtn.bdimg.com/it/u=1543094388,4252010312&fm=26&gp=0.jpg");
